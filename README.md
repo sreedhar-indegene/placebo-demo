@@ -1,5 +1,15 @@
 # Your Project's Title...
-Your project's description...
+Placebo Demo Site
+Local Setup:
+
+- npm install -g @adobe/aem-cli 
+
+- git clone https://github.com/sreedhar-indegene/placebo-demo.git 
+
+- To make reverse proxy work on localhost: set NODE_EXTRA_CA_CERTS=./certs/hlx.page.crt
+
+- aem up
+
 
 ## Environments
 - Preview: https://main--{repo}--{owner}.aem.page/
