@@ -1,0 +1,107 @@
+/* ========================================= */
+/* FULL WIDTH BLUE BACKGROUND */
+/* ========================================= */
+
+.section.icontext-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.section.icontext-container .icontext-wrapper {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #00416D; /* pharma blue */
+  padding: 70px 24px;
+  box-sizing: border-box;
+}
+
+/* ========================================= */
+/* INNER LAYOUT */
+/* ========================================= */
+
+.icontext-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .icontext-layout {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+/* ========================================= */
+/* IMAGE */
+/* ========================================= */
+
+.icontext-image picture,
+.icontext-image img {
+  display: block;
+  max-width: 128px;
+  height: auto;
+}
+
+/* ========================================= */
+/* CONTENT */
+/* ========================================= */
+
+.icontext-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #fff;
+}
+
+/* TITLE */
+
+.icontext-title p,
+.icontext-title h2,
+.icontext-title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+  color: #fff;
+}
+
+/* DESCRIPTION */
+
+.icontext-description p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e6eef7;
+}
+
+/* ========================================= */
+/* CTA */
+/* ========================================= */
+
+.icontext-cta {
+  margin-top: 12px;
+}
+
+.icontext-button {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: 30px;
+  background: #F7CB15 !important;
+  color: #00416D !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.icontext-button:hover {
+  background: #e6eef7;
+}

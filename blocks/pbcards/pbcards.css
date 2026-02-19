@@ -1,0 +1,173 @@
+/* ========================================= */
+/* FIX SECTION CONSTRAINT (when section has pbcards-container) */
+/* ========================================= */
+
+.section.pbcards-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* ========================================= */
+/* FULL WIDTH BREAKOUT */
+/* ========================================= */
+
+.section.pbcards-container .pbcards-wrapper {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 60px 24px;
+  box-sizing: border-box;
+  background: #f8fafc; /* optional */
+}
+
+/* Inner centered grid */
+.section.pbcards-container .pbcards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+/* 2 column layout */
+@media (min-width: 768px) {
+  .section.pbcards-container .pbcards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ========================================= */
+/* CARD STYLING */
+/* ========================================= */
+
+.pb-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pb-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+
+.pb-card picture,
+.pb-card img {
+  width: 100%;
+  display: block;
+}
+
+.pb-card img {
+  height: auto;
+  object-fit: cover;
+}
+
+/* CONTENT */
+
+.pb-card-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* EYEBROW */
+
+.pb-card-eyebrow p {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0072ce;
+  margin: 0;
+}
+
+/* TITLE */
+
+.pb-card-title h3,
+.pb-card-title p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+/* CTA */
+
+.pb-card-cta {
+  margin-top: auto;
+}
+
+.pb-card-button {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 28px;
+  background: #0072ce;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.pb-card-button:hover {
+  background: #005fa3;
+}
+
+/* ========================================= */
+/* CENTER ALIGN VARIANT */
+/* Applied only when .centeralign is added */
+/* ========================================= */
+
+.pbcards.centeralign .pb-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center everything */
+  text-align: center;
+}
+
+/* Center content wrapper */
+.pbcards.centeralign .pb-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Center eyebrow + title text */
+.pbcards.centeralign .pb-card-eyebrow p,
+.pbcards.centeralign .pb-card-title p {
+  text-align: center;
+}
+
+/* Center CTA */
+.pbcards.centeralign .pb-card-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* ========================================= */
+/* IMAGE — SHOW ORIGINAL SIZE */
+/* ========================================= */
+
+/* Prevent full width stretching */
+.pbcards.centeralign .pb-card picture,
+.pbcards.centeralign .pb-card img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Center image wrapper */
+.pbcards.centeralign .pb-card > div:first-child {
+  display: flex;
+  justify-content: center;
+}

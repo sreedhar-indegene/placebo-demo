@@ -1,0 +1,94 @@
+/* ========================================= */
+/* SECTION SPACING */
+/* ========================================= */
+
+.section.promobanner-container {
+  padding: 60px 24px;
+}
+
+/* Center the entire promo banner block */
+.promobanner-wrapper {
+  max-width: 1100px;   /* control content width */
+  margin: 0 auto;      /* center horizontally */
+}
+
+/* ========================================= */
+/* INNER LAYOUT */
+/* ========================================= */
+
+.promobanner > div {
+  display: flex;
+  align-items: center;   /* vertically align */
+  justify-content: center;
+  gap: 50px;
+}
+
+/* ========================================= */
+/* IMAGE */
+/* ========================================= */
+
+.promobanner > div > div:first-child {
+  flex: 0 0 auto;
+}
+
+.promobanner picture,
+.promobanner img {
+  display: block;
+  max-width: 130px;
+  height: auto;
+}
+
+/* ========================================= */
+/* CONTENT (Right Side) */
+/* ========================================= */
+
+.promobanner > div > div:last-child {
+  max-width: 600px;
+}
+
+.promobanner p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ========================================= */
+/* BUTTON */
+/* ========================================= */
+
+.promobanner .button-container {
+  margin-top: 16px;
+}
+
+.promobanner .button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: #005eb8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.promobanner .button:hover {
+  background: #004a94;
+  transform: translateY(-1px);
+}
+
+/* ========================================= */
+/* MOBILE RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 768px) {
+  .promobanner > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .promobanner > div > div:last-child {
+    max-width: 100%;
+  }
+}
