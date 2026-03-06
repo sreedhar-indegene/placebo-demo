@@ -1,0 +1,29 @@
+/* center the block */
+.pbvideo.block {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* title styling */
+.pbvideo-title {
+  color: #830051;
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* responsive video */
+.pbvideo-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.pbvideo-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  top: 0;
+  left: 0;
+}

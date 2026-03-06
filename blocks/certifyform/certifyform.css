@@ -1,0 +1,69 @@
+/* Center the whole block */
+.certifyform {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+/* Grey rounded wrapper - 80% width */
+.certifyform-container {
+  background-color: #C4007A1A;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+/* Keep content LEFT aligned */
+.certifyform-container h2,
+.certifyform-desc,
+.certifyform-field,
+.certifyform-error,
+.certifyform-form button,
+.certifyform-footer {
+  text-align: left;
+}
+
+/* Description */
+.certifyform-desc {
+  margin-bottom: 24px;
+  color: #555;
+}
+
+/* Input */
+.certifyform-field input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Error state */
+.certifyform-field input.error {
+  border-color: red;
+}
+
+/* Error message */
+.certifyform-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  display: none;
+}
+
+/* Button */
+.certifyform-form button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background-color: #830051;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+.certifyform-footer {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #777;
+}

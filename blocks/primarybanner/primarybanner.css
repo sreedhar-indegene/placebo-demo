@@ -1,0 +1,47 @@
+.primarybanner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.primarybanner picture,
+.primarybanner img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay container */
+.primarybanner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;   /* prevents overlap */
+  padding-left: 5%;
+  max-width: 600px;
+  color: #fff;
+}
+
+/* Button styling */
+.primarybanner .button {
+  background: #fff !important;
+  color: #830051 !important;
+  padding: 12px 24px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.banner-title p {
+  color: #830051;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.banner-desc p {
+  color: #830051;
+  font-size: 1.2rem;
+}

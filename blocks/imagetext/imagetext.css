@@ -1,0 +1,63 @@
+.imagetext {
+  width: 100%;
+}
+
+/* 2-column layout */
+.imagetext > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Text column */
+.imagetext-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Image column */
+.imagetext picture,
+.imagetext img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Title styling */
+.imagetext-title p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #830051;
+  margin: 0;
+}
+
+/* Description styling */
+.imagetext-desc p {
+  font-size: 1rem;
+  color: #830051;
+  margin: 0;
+}
+
+/* CTA styling (button style) */
+.imagetext .button {
+  background-color: #830051 !important;
+  color: #ffffff !important;
+  padding: 12px 24px;
+  display: inline-block;
+  width: fit-content;
+  border-radius: 4px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.imagetext-container {
+  background-color: #C4007A1A;
+}
+
+@media (max-width: 768px) {
+  .imagetext > div {
+    grid-template-columns: 1fr;
+  }
+}
